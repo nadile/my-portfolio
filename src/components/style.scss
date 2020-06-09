@@ -1,0 +1,186 @@
+.navbar {
+  color: whitesmoke;
+  background-image: url("../img/bck.jpg");
+
+  .collapse navbar-collapse {
+    width: 150px;
+  }
+  .navbar-brand {
+    font-size: 32px;
+  }
+  .navbar-nav {
+    position: absolute;
+    right: 10px;
+  }
+  .nav-item {
+    font-size: 18px;
+  }
+}
+
+.header {
+  background-image: url("../img/bck.jpg");
+  color: white;
+  width: auto;
+  height: 589px;
+  padding-top: 140px;
+  padding-left: 220px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  h1 {
+    color: white;
+    font-size: 80px;
+    justify-content: center;
+    letter-spacing: 0.1rem;
+  }
+  .header-about {
+    width: 800px;
+    padding: 10px;
+    padding-left: 40px;
+    margin: 0;
+    font-size: 20px;
+  }
+}
+
+.skills,
+.Tools {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(2, auto);
+  padding: 15px;
+}
+@mixin skill_mix {
+  height: 120px;
+  width: auto;
+  background: white;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 2px 2px 8px black;
+  padding: 25px;
+  padding-left: 60px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.skills-tab-a {
+  @include skill_mix;
+  grid-row: 1;
+  grid-column: 1 / span 100px;
+}
+.skills-tab-b {
+  @include skill_mix;
+  grid-row: 1;
+  grid-column: 2 / span 100px;
+}
+.skills-tab-c {
+  @include skill_mix;
+  grid-row: 1;
+  grid-column: 3 / span 100px;
+}
+.skills-tab-d {
+  @include skill_mix;
+  grid-row: 1;
+  grid-column: 4 / span 100px;
+}
+.skills-tab-e {
+  @include skill_mix;
+  grid-row: 1;
+  grid-column: 5 / span 100px;
+}
+.skills-tab-f {
+  @include skill_mix;
+  background-image: url("../img/mssql.png");
+  grid-row: 2;
+  grid-column: 1 / span 100px;
+  padding-left: 80px;
+  padding-top: 40px;
+}
+.skills-tab-g {
+  @include skill_mix;
+  grid-row: 2;
+  grid-column: 2 / span 100px;
+  padding-top: 40px;
+}
+.skills-tab-h {
+  @include skill_mix;
+  grid-row: 2;
+  grid-column: 3 / span 100px;
+  padding-top: 40px;
+}
+
+.tools-tab-a {
+  @include skill_mix();
+  padding-top: 20px;
+}
+.tools-tab-b {
+  @include skill_mix();
+  padding-top: 40px;
+}
+.tools-tab-c {
+  @include skill_mix();
+  background-image: url("../img/Anaconda_Logo.png");
+  padding-top: 40px;
+}
+.tools-tab-d {
+  @include skill_mix();
+  padding-top: 40px;
+}
+.tools-tab-e {
+  @include skill_mix();
+  background-image: url("../img/visualstudio.png");
+  padding-top: 40px;
+}
+
+.work-tab {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.card,
+.card1,
+.card2 {
+  width: 45ch;
+  height: 45ch;
+  background: grey;
+  border-radius: 5px;
+  background-image: url("../img/todoApp.png");
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 15px solid white;
+  float: left;
+}
+.card1 {
+  background-image: url("../img/1.jpg");
+  margin-left: 20px;
+}
+.card2 {
+  background-image: url("../img/2.jpg");
+}
+.card,
+.card1:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}
+.msg {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  letter-spacing: 0.2rem;
+  font-style: italic;
+  width: 340px;
+  padding: 3px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: none;
+  color: rgb(5, 110, 5);
+  background-color: white;
+}
+
+.msgAppear {
+  display: block;
+}
